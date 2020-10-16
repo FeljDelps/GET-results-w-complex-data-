@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET requests w/ complex data</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+    <link rel='stylesheet', type='text/css' href='main.css'>
+</head>
+<body>
+    <main>
+        <h1>National parks in your area</h1>
+        <form>
+            <label for='search-state'>
+                Enter your state 
+            </label>
+            <input type='text' name='search-state' id='js-search-state' required>
+            <label for='result-count'>Maximum results to return</label>
+            <input type='number' name='result-count' id=js-result-count required>
+            <input type='submit'>
+        </form>
+        <section id='results-section'>
+            <ul id='results-list' class='hidden'></ul>
+        </section>
+        <p id = 'js-error-message'></p>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src='index.js'></script>    
+</body>
+</html>
